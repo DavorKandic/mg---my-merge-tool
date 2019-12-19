@@ -5,6 +5,7 @@ import sys
 
 
 def mg():
+    extra_lines = None
     if len(sys.argv) < 3:
         print('Error! Two arguments required!')
         sys.exit()
@@ -39,9 +40,11 @@ def mg():
         print(f'Number of conficts: {confs}')
         for conf in diffs_dict.keys():
             print(f'In line: {conf}:\n(1)->{file_1}<<<\n{diffs_dict[conf][0]}>>>{file_2}-<-(2)\n{diffs_dict[conf][1]}\n')
-    print('Extra lines:')
-    for ln in extra_lines:
-        print(ln)
+    if extra_lines != None:
+        print('Extra lines:')
+        for ln in extra_lines:
+            print(ln)
+    print("\nDone!\n")
 
             
 
