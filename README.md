@@ -11,5 +11,7 @@ __HELP__: It takes two arguments e.g "first_file.txt" and "second_file.txt"
 + if one of the text files is larger than other, user will be prompted if he wants to append
           extra part of larger file to the end of new one
           
-##### __TO BE DONE:__ if two files are completely different user should be prompted to 
-##### choose if he wants to append one of them to another
+##### __TO BE DONE:__ *if two files are completely different user should be prompted to 
+##### choose if he wants to append one of them to another*
+
+__IMPORTANT NOTE:__ Program logic is based on __line-by-line comparison__ between two files.
